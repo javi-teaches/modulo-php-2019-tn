@@ -5,7 +5,7 @@ En el presente repositorio se irán publicando el clase a clase de los archivos 
 - [Clase 01 - Introducción](/clase01/)
 - [Clase 02 - Estructuras de control](/clase02/)
 - [Clase 03 - Bucles y PHP embebido](/clase03/)
-- [Clase 04 - Funciones](/clase03/)
+- [Clase 04 - Funciones](/clase04/)
 
 > Tengan en cuenta que para poder tener este mismo repositorio en sus máquinas deberán seguir los siguientes pasos:
 
