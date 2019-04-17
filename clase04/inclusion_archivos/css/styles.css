@@ -1,0 +1,13 @@
+body {
+	font-family: sans-serif;
+	background-color: rgb(224, 236, 166);
+}
+
+.main-nav {
+	background-color: red;
+}
+
+.main-nav a {
+	color: white;
+	text-decoration: none;
+}

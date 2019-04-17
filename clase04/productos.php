@@ -55,7 +55,7 @@
 					foreach ($productos as $key => $producto) {
 						echo "<div class='col-12 col-sm-6 col-lg-4'>";
 							echo "<h1 class='text-danger'>" . $producto["nombre"] . "</h1> ";
-							echo "<img src=" . $producto["imagen"] . "\"" . "width=\"100%\">";
+							echo "<img src=" . $producto["imagen"] . " width=\"100%\">";
 							echo "<b>$" . $producto["precio"] . "</b>";
 						echo "</div>";
 					}
