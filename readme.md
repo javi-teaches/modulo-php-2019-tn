@@ -6,6 +6,8 @@ En el presente repositorio se irán publicando el clase a clase de los archivos 
 - [Clase 02 - Estructuras de control](/clase02/)
 - [Clase 03 - Bucles y PHP embebido](/clase03/)
 - [Clase 04 - Funciones](/clase04/)
+- [Clase 05 - HTTP (GET y POST)](/clase05/)
+- [Clase 06 - Validaciones](/clase06/)
 
 > Tengan en cuenta que para poder tener este mismo repositorio en sus máquinas deberán seguir los siguientes pasos:
 
