@@ -16,7 +16,7 @@ if (isset($_FILES["avatar"])) {
 			// Si se cumple con el formato valido obtenemos el archivo temporal
 			$archivoTemporal = $_FILES["avatar"]["tmp_name"];
 
-			// Nos creamos un nombre de imagen único usando la extesión que capturamos
+			// Nos creamos un nombre de imagen único usando la extensión que capturamos
 			$nombreImagenFinal = uniqid("img_") . "." . $ext;
 
 			// Definimos el destino en donde se guardará la imagen
