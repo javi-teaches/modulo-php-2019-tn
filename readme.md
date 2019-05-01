@@ -9,6 +9,7 @@ En el presente repositorio se irán publicando el clase a clase de los archivos 
 - [Clase 05 - HTTP (GET y POST)](/clase05/)
 - [Clase 06 - Validaciones](/clase06/)
 - [Clase 07 - Persistencia - Json - Hash](/clase07/)
+- [Clase 08 - Cookies - Session - File upload](/clase08/)
 
 > Tengan en cuenta que para poder tener este mismo repositorio en sus máquinas deberán seguir los siguientes pasos:
 
