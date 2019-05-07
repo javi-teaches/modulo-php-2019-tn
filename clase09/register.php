@@ -63,8 +63,9 @@
 			login($theUser);
 		}
 	}
+
+	require_once 'partials/navbar.php';
 ?>
-	<?php require_once 'partials/navbar.php'; ?>
 
 	<!-- Register-Form -->
 	<div class="container" style="margin-top:30px; margin-bottom: 30px;">
