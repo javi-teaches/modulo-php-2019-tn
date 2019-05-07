@@ -3,8 +3,6 @@
 	// De esta manera tengo el scope a la funciones que necesito
 	require_once 'register-login-controller.php';
 
-	// debug(getAllUsers());
-
 	// Si está logueda la persona la redirijo al profile
 	if ( isLogged() ) {
 		header('location: profile.php');
@@ -13,6 +11,7 @@
 
 	$pageTitle = 'Register';
 	require_once 'partials/head.php';
+
 	$countries = [
 		'ar' => 'Argentina',
 		'bo' => 'Bolivia',
@@ -44,9 +43,9 @@
 		$errorsInRegister = registerValidate();
 
 		// Si no hay errores en el registro
+		// Cuando no hay errores guardo la imagen y los datos
 		// if ( count($errorsInRegister) == 0 ) {
 		if ( !$errorsInRegister ) {
-			// Cuando no hay errores guardo la imagen y los datos
 
 			// Guardo la imagen y obtengo el nombre aleatorio creado
 			$imgName = saveImage();
@@ -56,6 +55,9 @@
 
 			// Guardo al usuario en el archivo JSON, y me devuelve al usuario que guardó en array
 			$theUser = saveUser();
+
+			// Al momento en que se registar vamos a mantener la sesión abierta
+			setcookie('userLoged', $theUser['email'], time() + 3000);
 
 			// Logueo al usuario
 			login($theUser);
