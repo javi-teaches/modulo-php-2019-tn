@@ -14,6 +14,7 @@
 			</ul>
 
 			<ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
+				<!-- Preguntamos si NO está logueado el usuario para mostrar los enlaces Register y Login -->
 				<?php if ( !isLogged() ) : ?>
 					<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
 					<li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
