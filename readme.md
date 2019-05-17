@@ -12,6 +12,7 @@ En el presente repositorio se irán publicando el clase a clase de los archivos 
 - [Clase 08 - Cookies - Session - File upload](/clase08/)
 - [Clase 09 - Registro y login](/clase09/)
 - [Clase 10 - PHP y OOP v1](/clase10-oop/)
+- [Clase 11 - PHP y OOP v2](/clase11-oop/)
 
 > Tengan en cuenta que para poder tener este mismo repositorio en sus máquinas deberán seguir los siguientes pasos:
 
