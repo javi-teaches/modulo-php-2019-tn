@@ -91,7 +91,7 @@
 							<br>
 						</div>
 						<div class="col-12">
-							<button type="submit" class="btn btn-primary">Registrarse</button>
+							<button type="submit" class="btn btn-primary">Ingresar</button>
 							¿Aún no tenés cuenta? <a href="register.php">Registrate</a>
 						</div>
 					</div>

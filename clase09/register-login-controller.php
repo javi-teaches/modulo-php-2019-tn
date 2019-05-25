@@ -14,7 +14,7 @@
 		// Busco al usuario por el email que tengo almacenado en la cookie
 		$theUser = getUserByEmail($_COOKIE['userLoged']);
 
-		// Guardo en sesión al usuario que bisqué anteiormente
+		// Guardo en sesión al usuario que busqué anteiormente
 		$_SESSION['userLoged'] = $theUser;
 	}
 
@@ -274,6 +274,43 @@
 				return $oneUser;
 			}
 		}
+	}
+
+
+	// Función para editar al usuario
+	/*
+		Recibe como parámetro el email del usuario que quiero editar
+	*/
+	function editUser($email){
+		// Obtengo a todos los usuarios
+		$allUsers = getAllUsers();
+
+		// Recorro el array de usuarios
+		foreach ($allUsers as $position => $oneUser) {
+			// Si la posición email del usuario de esa iteración es igual al email que me pasan por parámetro
+			if ($oneUser['email'] == $email) {
+				// Obtengo la posición en la cual se encuentra el usuario dentro del array de usuarios
+				$userPosition = $position;
+				// Obtengo al usuario completo
+				$theUser = $oneUser;
+			}
+		}
+
+		// Al usuario que obtuve, le vuelvo a setear los valores editados
+		$theUser['name'] = $_POST['name'];
+		$theUser['email'] = $_SESSION['userLoged']['email']; // El email siempre será el mismo
+		$theUser['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+		$theUser['country'] = $_POST['country'];
+		$theUser['avatar'] = $_POST['avatar'];
+
+		// Guardo en la misma posición al usuario actualizado
+		$allUsers[$userPosition] = $theUser;
+
+		// Guardo todos los usuarios de vuelta en el JSON
+		file_put_contents(USERS_JSON_PATH, json_encode($allUsers));
+
+		// Retorno al usuario que acabo de editar para poder tenerlo listo y re-loguearlo
+		return $theUser;
 	}
 
 	// Función para hacer debug

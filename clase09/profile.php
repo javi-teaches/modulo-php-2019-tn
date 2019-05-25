@@ -24,6 +24,7 @@
 				<img src="data/avatars/<?= $theUser['avatar']; ?>" alt="imagen usuario">
 				<br><br>
 				<a href="#" class="btn btn-info"><?= $theUser['email']; ?></a>
+				<a href="edit-profile.php" class="btn btn-danger">Editar información</a>
 			</div>
 		</div>
 	</div>
